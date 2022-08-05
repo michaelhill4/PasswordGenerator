@@ -68,8 +68,6 @@ function questionPrompts() {
 }
 
 
-
-
 // Write password to the #password input
 function writePassword() {
   var passwordText = document.querySelector("#password");
@@ -77,34 +75,4 @@ function writePassword() {
   passwordText.value = password;
 }
 
-
-
-// function questionPrompts() {
-//   solutionArray = [];
-
-//   characterLength = (prompt("How many characters do you want your password to be? (8-128 characters)"))
-
-//   if (isNaN(characterLength) || characterLength <= 8 || characterLength > 128) {
-//     alert("Character length has to be a number between 8 and 128. Please enter password length again.");
-//     return false;
-//   }
-// }
-
-
-// if (confirm("Would you like lowercase letters in your password? More character options will make your password more secure.")) {
-//   solutionArray = solutionArray.concat(lowerCaseArray);
-// }
-
-// if (confirm("Would you like uppercase letters in your password? More character options will make your password more secure.")) {
-//   solutionArray = solutionArray.concat(upperCaseArray);
-// }
-
-// if (confirm("Would you like special characters in your password? More character options will make your password more secure.")) {
-//   solutionArray = solutionArray.concat(specialArray);
-// }
-
-// if (confirm("Would you like numbers in your password? More character options will make your password more secure.")) {
-//   solutionArray = solutionArray.concat(numberArray);
-
-// }
 generateBtn.addEventListener("click", writePassword);
