@@ -30,8 +30,8 @@ function questionPrompts() {
   var lowerCasePrompt = confirm("Would you like lowercase letters in your password? More character options will make your password more secure.")
   console.log(lowerCasePrompt)
   var upperCasePrompt = confirm("Would you like uppercase letters in your password?")
-  var numbersPrompt = confirm("Would you like uppercase letters in your password?")
-  var specialCharPrompt = confirm("Would you like  letters in your password?")
+  var numbersPrompt = confirm("Would you like numbers in your password?")
+  var specialCharPrompt = confirm("Would you like special characters in your password?")
   
   if (lowerCasePrompt === true) {
     solutionArray = solutionArray.concat(lowerCaseArray);
